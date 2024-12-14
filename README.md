@@ -15,7 +15,7 @@ This app allows users to upload a design image (e.g., JPG, PNG, JPEG) and conver
 
 Before running the app, make sure you have the following:
 
-- Python 3.8 or higher
+- Python 3.9 or higher
 - Google API Key (for using the Google Generative AI model)
 - Required Python packages: `streamlit`, `langchain`, `PIL`, `dotenv`, `Image2Code`
 
