@@ -1,11 +1,11 @@
 
-# Image To Code
+# Design to Website 
 
 ![](1.png)
 ![](2.png)
 
 
-This project allows users to upload a design image (e.g., JPG, PNG, JPEG) and converts the image into an HTML code representation. This uses Optical Character Recognition (OCR) to extract the layout from the image and generates HTML code based on the detected layout. It utilizes the power of Google's Generative AI and LangChain to create an accurate HTML structure.
+This  allows users to upload a design image (e.g., JPG, PNG, JPEG) and converts the image into an HTML code representation. This  uses Optical Character Recognition (OCR) to extract the layout from the image and generates HTML code based on the detected layout. It utilizes the power of Google's Generative AI and LangChain to create an accurate HTML structure.
 
 ## Features
 
