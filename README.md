@@ -1,76 +1,79 @@
-
-# Design to Website 
+# Design to Website Generator
 
 ![](1.png)
 ![](2.png)
 
+## 🚀 Overview
+The **Design to Website Generator** allows users to upload a design image (e.g., JPG, PNG, JPEG) and converts it into a functional HTML representation. It leverages **Optical Character Recognition (OCR)** to extract the layout and **Google's Generative AI** to generate structured HTML code using **LangChain**.
 
-This  allows users to upload a design image (e.g., JPG, PNG, JPEG) and converts the image into an HTML code representation. This  uses Optical Character Recognition (OCR) to extract the layout from the image and generates HTML code based on the detected layout. It utilizes the power of Google's Generative AI and LangChain to create an accurate HTML structure.
+## 🔥 Features
 
-## Features
+- **OCR Processing**: Extracts layout details from uploaded images using **EasyOCR**.
+- **AI-Powered HTML Generation**: Converts extracted layouts into structured **HTML code**.
+- **Streamlit UI**: User-friendly interface for seamless image uploading and HTML previewing.
+- **Google Generative AI**: Utilizes **gemini-2.0-flash** model for generating high-quality HTML.
+- **Custom Prompting**: A tailored prompt template enhances HTML generation accuracy.
 
-- **OCR Processing**: Extracts layout from uploaded images using OCR.
-- **HTML Generation**: Converts the extracted layout into HTML code.
-- **Streamlit UI**: Interactive web interface for image uploading and displaying the generated HTML.
-- **Google Generative AI**: Leverages Google’s Gemini-1.5-flash-8b model for HTML generation.
-- **Custom Prompt**: A custom template is used to guide the HTML generation process.
+## 📌 Prerequisites
+Before running the application, ensure you have the following installed:
 
-## Prerequisites
+- **Python 3.9 or higher**
+- **Google API Key** (required for Generative AI)
+- **Required Python packages**:
+  - `streamlit`
+  - `langchain`
+  - `PIL`
+  - `dotenv`
+  - `Image2Code`
 
-Before running the app, make sure you have the following:
+## 🛠️ Installation
 
-- Python 3.9 or higher
-- Google API Key (for using the Google Generative AI model)
-- Required Python packages: `streamlit`, `langchain`, `PIL`, `dotenv`, `Image2Code`
-
-## Installation
-
-1. Clone this repository:
+1. Clone the repository:
    ```bash
    git clone https://github.com/PriyanshuDey23/Image2Code.git
    ```
 
 2. Navigate to the project directory:
    ```bash
-   cd <project_directory>
+   cd Image2Code
    ```
 
-3. Install the required dependencies:
+3. Install dependencies:
    ```bash
    pip install -r requirements.txt
    ```
 
-4. Create a `.env` file in the root directory and add your Google API Key:
+4. Set up environment variables by creating a `.env` file in the root directory:
    ```
    GOOGLE_API_KEY=<your_google_api_key>
    ```
 
-## Usage
+## 🚀 Usage
 
-1. Start the Streamlit app:
+1. Run the Streamlit application:
    ```bash
    streamlit run app.py
    ```
 
 2. Open the app in your browser (usually at `http://localhost:8501`).
 
-3. Upload your design image (in JPG, PNG, or JPEG format).
+3. Upload your **design image** (JPG, PNG, or JPEG).
 
-4. Click on the "Run" button to process the image and generate the corresponding HTML.
+4. Click on the **"Generate HTML"** button to process the image.
 
-5. Once the process is complete, the generated HTML code will be displayed in the app. You can view the HTML source code or see a live preview of the HTML layout.
+5. View the **generated HTML code** or its **live preview** in the app.
 
-## Components
+## 🏗️ Components
+- **OCR Processor**: Extracts layout from the uploaded image using **EasyOCR**.
+- **LangChain**: Handles AI prompting and HTML generation.
+- **Streamlit**: Provides the interactive web interface.
+- **Google Generative AI**: Powers HTML code generation.
 
-- **OCR Processor**: Extracts layout from the uploaded image.
-- **LangChain**: Used for creating a prompt template and chain to generate HTML from the extracted layout.
-- **Streamlit**: Provides the web interface for image upload and displaying results.
-- **Google Generative AI**: The AI model used to generate HTML code.
+## 🎨 Customization
+You can modify the **custom prompt template (`CUSTOM_PROMPT_TEMPLATE`)** in the code to adjust the HTML generation logic according to your specific requirements.
 
-## Customization
+## 📜 License
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
 
-You can modify the custom prompt template (`CUSTOM_PROMPT_TEMPLATE`) in the code to adjust the HTML generation logic to your needs.
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
