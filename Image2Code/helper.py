@@ -26,7 +26,7 @@ CUSTOM_PROMPT_TEMPLATE = PROMPT
 def generate_html(layout):
     prompt = PromptTemplate(template=CUSTOM_PROMPT_TEMPLATE, input_variables=["layout"])
     llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash-8b",
+        model="gemini-2.0-flash",
         temperature=1,
         api_key=GOOGLE_API_KEY
     )
